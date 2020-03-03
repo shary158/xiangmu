@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../sass/index.css">
+    <link rel="stylesheet" href="../sass/all.css">
+</head>
+<body>
+    <div class="top">
+        <div class="center">
+            <div class="cr fr">
+                <ul>
+                    <li class="fl">您好，欢迎光临凡客诚品！</li>
+                    <li class="fl">
+                        <a href="#">登录</a>
+                    </li>
+                    <li class="fl">|</li>
+                    <li class="fl">
+                        <a href="#">注册</a>
+                    </li>
+                    <li class="fl change1">
+                        <a href="#">我的订单</a>
+                    </li>
+                    <li class="fl change1">
+                        <a href="#">
+                            <img src="../images/notice.png" alt="">
+                            <span>网站公告</span>
+                        </a>
+                    </li>
+                    <li class="li-img fl">
+                       <img src="../images/w1.jpg" alt="" class="fl">
+                        <a href="#">
+                            <img src="../images/w2.jpg" alt="" class="fl">
+                        </a>
+                    </li>
+                </ul>
+                <p><img src="../images/weixin.png" alt=""></p>
+            </div>  
+        </div>
+    </div>
+    <div class="select">
+        <div class="center">
+            <div class="lastr fr">
+                <div class="lr1 fl">
+                    <input type="text" value="搜“运动户外”，体验与众不同" class="search">
+                    <input type="button" value="" id="btn1">
+                </div>
+                <div class="lr2">
+                    <p class="fl carl">
+                        <a href="#">购物车
+                            <span>(1)</span>
+                        </a>
+                    </p>
+                    <div class="shoppingcar">
+                        <p>最近加入的商品:</p>
+                        <div class="xiangqing">
+                            <div class="x1">
+                                <div class="ximg fl">
+                                    <img src="../images/car-small16387710-1j201911041427316899.jpg" alt="">
+                                </div>
+                               <div class="imgchar fl">
+                                   <p>
+                                    <a href="#">
+                                        <span>T恤</span>
+                                        <span>山鸟叔</span>
+                                        <span>中国</span>
+                                        <span>白色</span>
+                                        </a>
+                                   </p>
+                                   <p>
+                                       <span>￥118.00x1</span>
+                                   </p>
+                               </div>
+                               <p class="del fr">
+                                   <a href="#">删除</a>
+                              </p>
+                            </div>
+                        </div>
+                        <div class="picesum">
+                            <p class="fl">
+                                <span>共计(未计算促销折扣)</span>
+                                <span>￥118</span>
+                            </p>
+                            <p class="fr">
+                                <a href="#">查看购物车(1件)</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hotchar ">
+                   <p class="fl">
+                       <span>热门搜索：</span>
+                       <a href="#">免烫衬衫</a>
+                       <a href="#">羽绒服</a>
+                       <a href="#">外套</a>
+                       <a href="#">熊本熊</a>
+                       <a href="#">运动户外</a>
+                       <a href="#">帆布鞋</a>
+                       <a href="#">水柔棉</a>
+                   </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="list">
+
+    </div>
+    <script src="../lib/jquery/dist/jquery.min.js"></script>
+    <script>
+        var str="6194599,6378474,6382631,6377978,6378392"
+    $.ajax({
+        url:'http://recom-s.vancl.com/product/GetProductInfosBySeckill',
+        data:{
+            productcodes:str
+        },
+        dataType:'jsonp',
+        success:function(res){
+            console.log(res);
+            
+        }
+    })
+    </script>
+ 
+</body>
+</html>
